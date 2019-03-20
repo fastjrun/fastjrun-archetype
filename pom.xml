@@ -9,6 +9,7 @@
     <packaging>pom</packaging>
     <name>快嘉脚手架系列</name>
     <url>http://fastjrun.com/</url>
+    <description>快嘉框架脚手架系列</description>
     <distributionManagement>
         <snapshotRepository>
             <id>sonatype-nexus-snapshots</id>

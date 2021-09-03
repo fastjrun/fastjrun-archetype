@@ -33,9 +33,12 @@
                          targetProject="src/main/resources">
             <property name="enableSubPackages" value="false" />
         </sqlMapGenerator>
-        <!-- !!!! Mapper Interface Configurations !!!! -->
+        <!-- !!!! Mapper Interface Configurations !!!! when type in
+        XMLMAPPER：生成xml文件
+        ANNOTATEDMAPPER: 生成注解，忽略xml文件
+        -->
         <javaClientGenerator targetPackage="${package}.mapper"
-                             targetProject="src/main/java" type="XMLMAPPER">
+                             targetProject="src/main/java" type="ANNOTATEDMAPPER">
             <property name="enableSubPackages" value="false" />
         </javaClientGenerator>
         <!-- !!!! Table Configurations !!!! -->

@@ -4,11 +4,11 @@
 
     <groupId>com.fastjrun.archetype</groupId>
     <artifactId>archetype-parent</artifactId>
-    <version>1.1</version>
+    <version>1.2-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>��ν��ּ�ϵ��</name>
+    <name>基于h2生成mybatis代码脚手架</name>
     <url>http://fastjrun.com/</url>
-    <description>��ο�ܽ��ּ�ϵ��</description>
+    <description>快嘉框架脚手架系列-基于h2生成mybatis代码</description>
     <distributionManagement>
         <snapshotRepository>
             <id>sonatype-nexus-snapshots</id>

@@ -12,11 +12,6 @@
             <directory>src/main/resources</directory>
             <includes>
                 <include>**/*.xml</include>
-            </includes>
-        </fileSet>
-        <fileSet encoding="UTF-8">
-            <directory></directory>
-            <includes>
                 <include>__artifactId__.sql</include>
             </includes>
         </fileSet>

@@ -146,7 +146,7 @@
                         </goals>
                         <configuration>
                             <configurationFile>src/main/resources/mybatis-generator.xml</configurationFile>
-                            <sqlScript>${artifactId}.sql</sqlScript>
+                            <sqlScript>classpath:${artifactId}.sql</sqlScript>
                             <overwrite>true</overwrite>
                             <jdbcDriver>org.h2.Driver</jdbcDriver>
                             <jdbcURL>jdbc:h2:mem:${artifactId};MODE=MYSQL;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=FALSE</jdbcURL>

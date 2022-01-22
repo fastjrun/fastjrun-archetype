@@ -9,7 +9,7 @@
 
     <properties>
         <mybatis.version>3.5.7</mybatis.version>
-        <h2.version>1.4.200</h2.version>
+        <h2.version>[2.1.210,)</h2.version>
         <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
         <maven-clean-plugin.version>3.1.0</maven-clean-plugin.version>
         <maven-jar-plugin.version>3.1.0</maven-jar-plugin.version>

@@ -24,13 +24,13 @@
         </javaTypeResolver>
         <!-- !!!! Model Configurations !!!! -->
         <javaModelGenerator targetPackage="${package}.entity"
-                            targetProject="src/main/java">
+                            targetProject="${targetJavaProject}">
             <property name="enableSubPackages" value="false" />
             <property name="trimStrings" value="true" />
         </javaModelGenerator>
         <!-- !!!! Mapper XML Configurations !!!! -->
         <sqlMapGenerator targetPackage="mappers"
-                         targetProject="src/main/resources">
+                         targetProject="${targetResourcesProject}">
             <property name="enableSubPackages" value="false" />
         </sqlMapGenerator>
         <!-- !!!! Mapper Interface Configurations !!!! when type in
@@ -38,7 +38,7 @@
         ANNOTATEDMAPPER: 生成注解，忽略xml文件
         -->
         <javaClientGenerator targetPackage="${package}.mapper"
-                             targetProject="src/main/java" type="ANNOTATEDMAPPER">
+                             targetProject="${targetJavaProject}" type="ANNOTATEDMAPPER">
             <property name="enableSubPackages" value="false" />
         </javaClientGenerator>
         <!-- !!!! Table Configurations !!!! -->

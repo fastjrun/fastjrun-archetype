@@ -9,7 +9,7 @@
 
     <properties>
         <mybatis.version>3.5.7</mybatis.version>
-        <h2.version>[2.1.210,)</h2.version>
+        <h2.version>2.1.210</h2.version>
         <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
         <maven-clean-plugin.version>3.1.0</maven-clean-plugin.version>
         <maven-jar-plugin.version>3.1.0</maven-jar-plugin.version>
@@ -20,6 +20,10 @@
         <java.version>1.8</java.version>
         <source.encoding>UTF-8</source.encoding>
         <maven.build.timestamp.format>yyyy-MM-dd HH:mm:ssZ</maven.build.timestamp.format>
+        <!--  Java接口和实体类  -->
+        <targetJavaProject>${basedir}/src/main/java</targetJavaProject>
+        <!--  XML生成路径  -->
+        <targetResourcesProject>${basedir}/src/main/resources</targetResourcesProject>
     </properties>
     <dependencies>
         <dependency>
@@ -53,6 +57,11 @@
                                 <includes>
                                     <include>**/*</include>
                                 </includes>
+                                <useDefaultExcludes>true</useDefaultExcludes>
+                                <!--对这些文件不清理-->
+                                <excludes>
+                                    <exclude>*.info</exclude>
+                                </excludes>
                             </fileset>
                             <fileset>
                                 <directory>src/main/resources</directory>
@@ -146,6 +155,7 @@
                         </goals>
                         <configuration>
                             <configurationFile>src/main/resources/mybatis-generator.xml</configurationFile>
+                            <outputDirectory>${project.build.directory}</outputDirectory>
                             <sqlScript>classpath:${artifactId}.sql</sqlScript>
                             <overwrite>true</overwrite>
                             <jdbcDriver>org.h2.Driver</jdbcDriver>

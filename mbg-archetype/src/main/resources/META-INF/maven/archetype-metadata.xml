@@ -21,6 +21,5 @@
                 <include>pom.xml</include>
             </includes>
         </fileSet>
-
     </fileSets>
 </archetype-descriptor>

@@ -4,11 +4,11 @@
 
     <groupId>com.fastjrun.archetype</groupId>
     <artifactId>archetype-parent</artifactId>
-    <version>1.2-SNAPSHOT</version>
+    <version>1.2</version>
     <packaging>pom</packaging>
-    <name>基于h2生成mybatis代码脚手架</name>
-    <url>http://fastjrun.com/</url>
-    <description>快嘉框架脚手架系列-基于h2生成mybatis代码</description>
+    <name>快嘉框架archetype</name>
+    <url>http://fastjrun.com/archetype</url>
+    <description>快嘉框架archetype系列</description>
     <distributionManagement>
         <snapshotRepository>
             <id>sonatype-nexus-snapshots</id>
@@ -74,9 +74,10 @@
         <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
         <maven-archetype-plugin.version>3.0.1</maven-archetype-plugin.version>
         <maven-javadoc-plugin.version>3.0.1</maven-javadoc-plugin.version>
-        <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
+        <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
         <maven-deploy-plugin.version>3.0.0-M1</maven-deploy-plugin.version>
         <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
+        <maven-scm-provider-gitexe.version>1.10.0</maven-scm-provider-gitexe.version>
         <nexus-staging-maven-plugin.version>1.6.7</nexus-staging-maven-plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -113,13 +114,14 @@
                             <localCheckout>true</localCheckout>
                             <pushChanges>false</pushChanges>
                             <mavenExecutorId>forked-path</mavenExecutorId>
+                            <!--suppress UnresolvedMavenProperty -->
                             <arguments>-Dgpg.passphrase=${gpg.passphrase}</arguments>
                         </configuration>
                         <dependencies>
                             <dependency>
                                 <groupId>org.apache.maven.scm</groupId>
                                 <artifactId>maven-scm-provider-gitexe</artifactId>
-                                <version>1.10.0</version>
+                                <version>${maven-scm-provider-gitexe.version}</version>
                             </dependency>
                         </dependencies>
                     </plugin>

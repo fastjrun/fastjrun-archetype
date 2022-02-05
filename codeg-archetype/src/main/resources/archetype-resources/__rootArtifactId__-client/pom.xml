@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (C) 2019 Fastjrun, Inc. All Rights Reserved.
+  --><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>${groupId}</groupId>
+        <artifactId>${rootArtifactId}-codeg</artifactId>
+        <version>${version}</version>
+    </parent>
+    <artifactId>${artifactId}</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>com.fastjrun.codeg.apiworld</groupId>
+            <artifactId>apiworld-sdkg-client</artifactId>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.fastjrun.codeg</groupId>
+                <artifactId>sdkg-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>initialize phase</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>clientGc</goal>
+                        </goals>
+                        <configuration>
+                            <bundleFiles>${bundleFiles}</bundleFiles>
+                            <packagePrefix>${packagePrefix}.</packagePrefix>
+                            <module>${rootArtifactId}-client</module>
+                            <company>${company}</company>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

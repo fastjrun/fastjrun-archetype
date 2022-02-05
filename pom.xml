@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.fastjrun.archetype</groupId>
     <artifactId>archetype-parent</artifactId>
-    <version>1.2</version>
+    <version>1.3-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>快嘉框架archetype</name>
     <url>http://fastjrun.com/archetype</url>
@@ -38,6 +39,11 @@
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resource-plugin</artifactId>
+                    <version>${maven-resource-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-archetype-plugin</artifactId>
                     <version>${maven-archetype-plugin.version}</version>
                 </plugin>
@@ -68,11 +74,28 @@
                 </plugin>
             </plugins>
         </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <addDefaultExcludes>false</addDefaultExcludes>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-archetype-plugin</artifactId>
+                <configuration>
+                    <useDefaultExcludes>false</useDefaultExcludes>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
     <properties>
-        <archetype-packaging.version>3.0.1</archetype-packaging.version>
+        <archetype-packaging.version>3.2.1</archetype-packaging.version>
         <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
-        <maven-archetype-plugin.version>3.0.1</maven-archetype-plugin.version>
+        <maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
+        <maven-archetype-plugin.version>3.2.1</maven-archetype-plugin.version>
         <maven-javadoc-plugin.version>3.0.1</maven-javadoc-plugin.version>
         <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
         <maven-deploy-plugin.version>3.0.0-M1</maven-deploy-plugin.version>
@@ -96,7 +119,8 @@
     </developers>
     <modules>
         <module>mbg-archetype</module>
-  </modules>
+        <module>codeg-archetype</module>
+    </modules>
     <scm>
         <connection>scm:git@github.com:fastjrun/fastjrun-archetype.git</connection>
         <developerConnection>scm:git@github.com:fastjrun/fastjrun-archetype.git</developerConnection>

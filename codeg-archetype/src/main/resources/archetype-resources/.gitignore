@@ -1,0 +1,11 @@
+/.idea/
+*.iml
+target
+*/*.iml
+*/target
+*-api/src
+*-client/src
+*-bundle/src
+*-bundle-mock/src
+
+

@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: dev
+
+logging:
+  level:
+    root: WARN
+    com:
+      fastjrun:
+        apiworld: DEBUG
+    org:
+      springframework:
+        boot: ERROR

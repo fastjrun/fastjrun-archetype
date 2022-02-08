@@ -7,9 +7,9 @@
         <artifactId>archetype-parent</artifactId>
         <version>1.4-SNAPSHOT</version>
     </parent>
-    <name>接口代码生成原型</name>
+    <name>自定义接口代码生成器原型</name>
     <url>http://fastjrun.com/archetype/codeg-archetype</url>
-    <description>快嘉框架archetype系列-接口代码生成</description>
+    <description>快嘉框架archetype系列-自定义接口代码生成器</description>
     <packaging>maven-archetype</packaging>
-    <artifactId>codeg-archetype</artifactId>
+    <artifactId>sdkg-archetype</artifactId>
 </project>

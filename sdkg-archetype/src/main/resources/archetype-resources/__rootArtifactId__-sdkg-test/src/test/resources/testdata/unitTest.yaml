@@ -1,0 +1,19 @@
+CodeGServiceTest.testGenerateBundle:
+  - bundleFiles: ${rootArtifactId}-codeg/${rootArtifactId}-api.xml
+    moduleName: ${rootArtifactId}-codeg/${rootArtifactId}-bundle
+    packagePrefix: com.fastjrun.${rootArtifactId}.
+
+CodeGServiceTest.testGenerateAPI:
+  - bundleFiles: ${rootArtifactId}-codeg/${rootArtifactId}-api.xml
+    moduleName: ${rootArtifactId}-codeg/${rootArtifactId}-api
+    packagePrefix: com.fastjrun.${rootArtifactId}.
+
+CodeGServiceTest.testGenerateClient:
+  - bundleFiles: ${rootArtifactId}-codeg/${rootArtifactId}-api.xml
+    moduleName: ${rootArtifactId}-codeg/${rootArtifactId}-client
+    packagePrefix: com.fastjrun.${rootArtifactId}.
+
+CodeGServiceTest.testGenerateBundleMock:
+  - bundleFiles: ${rootArtifactId}-codeg/${rootArtifactId}-api.xml
+    moduleName: ${rootArtifactId}-codeg/${rootArtifactId}-bundle-mock
+    packagePrefix: com.fastjrun.${rootArtifactId}.

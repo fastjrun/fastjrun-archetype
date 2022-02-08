@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor xsi:schemaLocation="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 http://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd" name="apiworld-sdkg"
+    xmlns="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <fileSets>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory></directory>
+      <includes>
+        <include>build.sh</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory></directory>
+      <includes>
+        <include>.gitignore</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+  <modules>
+    <module id="${rootArtifactId}-sdkg-api" dir="__rootArtifactId__-sdkg-api" name="${rootArtifactId}-sdkg-api">
+      <fileSets>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="${rootArtifactId}-sdkg-common" dir="__rootArtifactId__-sdkg-common" name="${rootArtifactId}-sdkg-common">
+      <fileSets>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="${rootArtifactId}-sdkg-client" dir="__rootArtifactId__-sdkg-client" name="${rootArtifactId}-sdkg-client">
+      <fileSets>
+        <fileSet filtered="true"packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="${rootArtifactId}-sdkg-service" dir="__rootArtifactId__-sdkg-service" name="${rootArtifactId}-sdkg-service">
+      <fileSets>
+        <fileSet filtered="true"packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="${rootArtifactId}-sdkg-provider" dir="__rootArtifactId__-sdkg-provider" name="${rootArtifactId}-sdkg-provider">
+      <fileSets>
+        <fileSet filtered="true"packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="${rootArtifactId}-sdkg-generator" dir="__rootArtifactId__-sdkg-generator" name="${rootArtifactId}-sdkg-generator">
+      <fileSets>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>src/main/resources</directory>
+          <includes>
+            <include>**/*.properties</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="${rootArtifactId}-sdkg-test" dir="__rootArtifactId__-sdkg-test" name="${rootArtifactId}-sdkg-test">
+      <fileSets>
+        <fileSet filtered="true"packaged="true" encoding="UTF-8">
+          <directory>src/test/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>src/test/resources</directory>
+          <includes>
+            <include>testng.xml</include>
+            <include>**/*.yaml</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>src/test/resources</directory>
+          <includes>
+            <include>log4j2.xml</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="${rootArtifactId}-codeg" dir="__rootArtifactId__-codeg" name="${rootArtifactId}-codeg">
+      <fileSets>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>__rootArtifactId__-api.xml</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>fastjrun-__rootArtifactId__-schema.xsd</include>
+            <include>fastjrun-schema.xsd</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+      <modules>
+        <module id="${rootArtifactId}-api" dir="__rootArtifactId__-api" name="${rootArtifactId}-api">
+        </module>
+        <module id="${rootArtifactId}-bundle" dir="__rootArtifactId__-bundle" name="${rootArtifactId}-bundle">
+        </module>
+        <module id="${rootArtifactId}-bundle-mock" dir="__rootArtifactId__-bundle-mock" name="${rootArtifactId}-bundle-mock">
+        </module>
+        <module id="${rootArtifactId}-mock-server" dir="__rootArtifactId__-mock-server" name="${rootArtifactId}-mock-server">
+          <fileSets>
+            <fileSet filtered="true" encoding="UTF-8">
+              <directory>src/main/java</directory>
+              <includes>
+                <include>**/*.java</include>
+              </includes>
+            </fileSet>
+          </fileSets>
+        </module>
+        <module id="${rootArtifactId}-client" dir="__rootArtifactId__-client" name="${rootArtifactId}-client">
+        </module>
+      </modules>
+    </module>
+  </modules>
+</archetype-descriptor>

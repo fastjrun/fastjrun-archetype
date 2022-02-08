@@ -1,0 +1,11 @@
+/.idea/
+*.iml
+**/target
+**/*.iml
+pom.xml.versionsBackup
+*/pom.xml.versionsBackup
+*-codeg/*-api/src
+*-codeg/*-bundle/src
+*-codeg/*-bundle-mock/src
+*-codeg/*-client/src
+

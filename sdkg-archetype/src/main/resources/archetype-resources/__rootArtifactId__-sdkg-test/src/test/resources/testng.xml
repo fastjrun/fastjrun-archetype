@@ -1,0 +1,17 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (C) 2019 Fastjrun, Inc. All Rights Reserved.
+  -->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="sdkgTestSuite" parallel="classes" thread-count="3"
+       data-provider-thread-count="20">
+    <test name="sdkgTest" parallel="methods" thread-count="3">
+        <parameter name="envName" value="${symbol_dollar}{envName}"/>
+        <packages>
+            <package name="com.fastjrun.${rootArtifactId}.codeg.service"/>
+        </packages>
+    </test>
+</suite>

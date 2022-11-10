@@ -5,7 +5,7 @@
 
     <groupId>com.fastjrun.archetype</groupId>
     <artifactId>archetype-parent</artifactId>
-    <version>1.4</version>
+    <version>1.5</version>
     <packaging>pom</packaging>
     <name>快嘉框架archetype</name>
     <url>http://fastjrun.com/archetype</url>
@@ -121,6 +121,7 @@
         <module>mbg-archetype</module>
         <module>codeg-archetype</module>
         <module>sdkg-archetype</module>
+        <module>mbg4-archetype</module>
     </modules>
     <scm>
         <connection>scm:git@github.com:fastjrun/fastjrun-archetype.git</connection>

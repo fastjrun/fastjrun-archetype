@@ -1,17 +1,26 @@
 ### 快嘉框架archetype系列
 
+#### 基于h2生成MyBatis Dynamic SQL代码原型
+
+```bash
+mvn archetype:generate -U -B -DgroupId=com.fastjrun.share -DartifactId=mbgdemo -Dpackage="com.fastjrun.share.mbgdemo" \
+-Dversion=1.0-SNAPSHOT -DarchetypeGroupId=com.fastjrun.archetype -DarchetypeArtifactId=mbg4-archetype -DarchetypeVersion=1.5 -U
+```
+
 #### 基于h2生成mybatis代码原型
 
 - [基于h2数据库使用mybatis-generator-maven-plugin生成代码实践-注解版](https://my.oschina.net/fastjrun/blog/5425920)
 
 ```bash
-mvn archetype:generate -U -B -DgroupId=com.fastjrun.share -DartifactId=mbgdemo -Dpackage="com.fastjrun.share.mbgdemo" -Dversion=1.0-SNAPSHOT -DarchetypeGroupId=com.fastjrun.archetype -DarchetypeArtifactId=mbg-archetype -DarchetypeVersion=1.2 -U
+mvn archetype:generate -U -B -DgroupId=com.fastjrun.share -DartifactId=mbgdemo -Dpackage="com.fastjrun.share.mbgdemo" \
+-Dversion=1.0-SNAPSHOT -DarchetypeGroupId=com.fastjrun.archetype -DarchetypeArtifactId=mbg-archetype -DarchetypeVersion=1.2 -U
 ```
 
 #### 接口代码生成模块原型
 
 ```shell
-mvn archetype:generate -U -B -DgroupId=com.fastjrun.codeg.hellapi.simple -DartifactId=hellapi -Dpackage="com.fastjrun.hellapi" -Dversion=1.0-SNAPSHOT -DarchetypeGroupId=com.fastjrun.archetype -DarchetypeArtifactId=codeg-archetype -DarchetypeVersion=1.3 -U
+mvn archetype:generate -U -B -DgroupId=com.fastjrun.codeg.hellapi.simple -DartifactId=hellapi -Dpackage="com.fastjrun.helloapi" \
+-Dversion=1.0-SNAPSHOT -DarchetypeGroupId=com.fastjrun.archetype -DarchetypeArtifactId=codeg-archetype -DarchetypeVersion=1.3 -U
 ```
 
 - 已知问题
@@ -24,7 +33,8 @@ mvn archetype:generate -U -B -DgroupId=com.fastjrun.codeg.hellapi.simple -Dartif
 #### 自定义接口代码生成器模块原型
 
 ```shell
-mvn archetype:generate -U -B -DgroupId=com.fastjrun.codeg.hellapi -DartifactId=hellapi -Dpackage="com.fastjrun.hellapi" -Dversion=1.0-SNAPSHOT -DarchetypeGroupId=com.fastjrun.archetype -DarchetypeArtifactId=sdkg-archetype -DarchetypeVersion=1.4 -U
+mvn archetype:generate -U -B -DgroupId=com.fastjrun.codeg.hellapi -DartifactId=hellapi -Dpackage="com.fastjrun.helloapi" \
+-Dversion=1.0-SNAPSHOT -DarchetypeGroupId=com.fastjrun.archetype -DarchetypeArtifactId=sdkg-archetype -DarchetypeVersion=1.4 -U
 ```
 
 - 已知问题

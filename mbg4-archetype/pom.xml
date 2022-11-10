@@ -7,9 +7,9 @@
         <artifactId>archetype-parent</artifactId>
         <version>1.5</version>
     </parent>
-    <name>接口代码生成原型</name>
-    <url>http://fastjrun.com/archetype/codeg-archetype</url>
-    <description>快嘉框架archetype系列-接口代码生成</description>
+    <name>基于h2生成MyBatis Dynamic SQL代码原型</name>
+    <url>http://fastjrun.com/archetype/mbg-archetype</url>
+    <description>快嘉框架archetype系列-基于h2生成MyBatis Dynamic SQL代码</description>
     <packaging>maven-archetype</packaging>
-    <artifactId>codeg-archetype</artifactId>
+    <artifactId>mbg4-archetype</artifactId>
 </project>

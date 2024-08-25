@@ -7,9 +7,9 @@
         <artifactId>archetype-parent</artifactId>
         <version>1.6</version>
     </parent>
-    <name>基于h2生成MyBatis Dynamic SQL代码原型</name>
-    <url>http://fastjrun.com/archetype/mbg-archetype</url>
-    <description>快嘉框架archetype系列-基于h2生成MyBatis Dynamic SQL代码</description>
+    <name>基于sql文件生成mybatis-plus代码原型</name>
+    <url>http://fastjrun.com/archetype/mpbg-archetype</url>
+    <description>快嘉框架archetype系列-基于sql文件生成mybatis-plus代码原型</description>
     <packaging>maven-archetype</packaging>
-    <artifactId>mbg4-archetype</artifactId>
+    <artifactId>mpbg-archetype</artifactId>
 </project>
